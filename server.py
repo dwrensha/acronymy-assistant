@@ -56,7 +56,7 @@ class State:
 
         self.app = web.Application()
         self.app.add_routes([web.get('/socket', lambda req : self.wshandle(req))])
-        self.app.router.add_static('/', 'webapp/static', show_index=True)
+        self.app.router.add_static('/', 'static', show_index=True)
 
     def allow_word(self, word, idx):
         if word[:4] == self.word[:4]:
