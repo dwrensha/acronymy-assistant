@@ -2,6 +2,8 @@
 
 Acronymy Assistant is an interactive tool for composing backronyms.
 
+![screenshot](screenshot.png)
+
 ## How to run
 
 Set up a virtual environment:
