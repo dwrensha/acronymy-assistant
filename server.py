@@ -417,7 +417,7 @@ class State:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="run the Acronymy Definition Generator Server")
     parser.add_argument("--word_list", type=str,
-                        default="/home/dwrensha/Desktop/acronymy-words.txt")
+                        default="wordlist.asc")
     parser.add_argument("--device", type=str, default="cuda", help="where to run")
     parser.add_argument("--model", type=str, default="EleutherAI/pythia-1B",
                         help="EleutherAI/pythia-X where X is one of 70M, 160M, " +
