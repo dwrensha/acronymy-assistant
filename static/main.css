@@ -1,0 +1,162 @@
+body { font-family: Helvetica, Sans, Arial;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 920px;
+}
+* {
+  box-sizing: border-box;
+}
+#main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.prompt-form {
+    width: 900px;
+    display: flex;
+}
+.prompt-input {
+    width: 780px;
+    height: 60px;
+}
+.prompt-button-col{
+    width: 120px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.row2 {
+    margin-top: 10px;
+    width: 800px;
+    display: flex;
+    justify-content: left;
+}
+.row4 {
+    width: 920px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.randomize-all {
+    width: 100px;
+
+}
+.replace-prob {
+    width: 275px;
+    display: flex;
+    justify-content: left;
+}
+.temp {
+    width: 225px;
+    display: flex;
+    justify-content: left;
+}
+
+input[type=range] {
+    width: 100px;
+}
+
+.def-words-table {
+    width: 920px;
+    height: 525px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; */
+
+}
+.single-letter-controls {
+    display: flex;
+    height: 75px;
+    text-align: left;
+    border-width : 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.tok-candidates {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 350px;
+    margin-left: 5px;
+}
+
+.forbidden-prefixes {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 150px;
+    margin-left: 5px;
+}
+
+.def-word {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.definition {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.definition-content {
+    font-size: 16pt;
+    text-align: center;
+}
+.definition-token {
+    font-size: 16pt;
+    border-bottom: solid;
+    border-width: 5px;
+    border-radius: 3px;
+}
+
+.score {
+    font-size: 10pt;
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+}
+
+.pin {
+    width: 100%;
+}
+
+[data-pinned="true"] {
+    background-color: #cccccc;
+}
+
+.randomize {
+    width: 100%;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: 5px;
+}
+.form-column button {
+    width: 55px;
+}
+.form-column input {
+    width: 95px;
+}
+.form-column input[type=checkbox] {
+    width: 15px;
+}
+
