@@ -2,7 +2,13 @@
 
 Acronymy Assistant is an interactive tool for composing backronyms.
 
-![screenshot](screenshot.png)
+
+Screenshot:
+<img src="screenshot.png" height="300px">
+
+
+Video explanation:
+[<img src="http://img.youtube.com/vi/LjOHnXRIp4Y/0.jpg" height="120px">](http://youtu.be/LjOHnXRIp4Y)
 
 ## How to run
 
