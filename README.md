@@ -6,7 +6,7 @@ It was created as an attempt to speed up progress on https://acronymy.net/ .
 
 Here's what it looks like:
 
-<img style="border:1px" src="screenshot.png" height="300px">
+<img src="screenshot.png" height="300px">
 
 And here is a quick video explanation of how it works:
 
@@ -24,7 +24,21 @@ If there is no `$DEF`, then the definition will be added at the end of the promp
 Higher temperature flattens the probability distributions, i.e. makes
 Acronymy Assistant more likely to choose weirder tokens.
 
-### remplacement_prob
+### replacement_prob
+
+At each iteration, Acronymy Assistant resamples a random subset
+of the current definition's words. For each word, replacement_prob is
+the probability that it will be replace on a given iteration.
+
+### Sample from model
+If the "sample from model" checkbox is checked for a word, then tokens
+for that word are chosen from the neural network model.
+Otherwise, the word is resample uniformly from the
+word list (by default wordlist.asc).
+Uniform sampling is kind of like setting the temerature
+infinitely high, but is additionally constrained to only choose words
+in the word list.
+
 
 ## How to run
 
