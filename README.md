@@ -53,8 +53,7 @@ source venv/bin/activate
 Download the dependecies:
 
 ```
-pip install aiohttp
-pip install 'transformers[torch]'
+pip install -r requirements.txt
 ```
 
 Start the server:
