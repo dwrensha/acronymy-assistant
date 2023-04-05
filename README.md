@@ -4,9 +4,9 @@ Acronymy Assistant is an interactive tool for composing backronyms.
 
 It was created as an attempt to speed up progress on https://acronymy.net/ .
 
-Here's what it looks like:
+Here is what it looks like:
 
-<img src="screenshot.png" height="300px">
+<img src="screenshot.png" height="240px">
 
 And here is a quick video explanation of how it works:
 
