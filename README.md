@@ -2,7 +2,7 @@
 
 Acronymy Assistant is an interactive tool for composing backronyms.
 
-It was created as an attempt to speed up progress on https://acronymy.net/ .
+It was created as an attempt to speed up progress on https://acronymy.net/.
 
 Here is what it looks like:
 
