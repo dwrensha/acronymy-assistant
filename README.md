@@ -10,7 +10,7 @@ Here is what it looks like:
 
 And here is a quick video explanation of how it works:
 
-[<img src="http://img.youtube.com/vi/LjOHnXRIp4Y/0.jpg" height="240px">](http://youtu.be/LjOHnXRIp4Y)
+[<img src="http://img.youtube.com/vi/LjOHnXRIp4Y/maxresdefault.jpg" height="240px">](http://youtu.be/LjOHnXRIp4Y)
 
 
 ## Features
