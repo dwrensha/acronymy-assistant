@@ -314,6 +314,7 @@ class State:
 
         if new_score < self.current_score :
             self.current_score = new_score
+            self.current_tokeninfos = tokeninfos
             self.current_def = new_def
             for idx in range(len(new_def)):
                 await self.send_msg({'new_def_word': {'idx': idx, 'word': new_def[idx]}})
