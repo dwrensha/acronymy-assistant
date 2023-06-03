@@ -209,7 +209,7 @@ class State:
             total = 0
             tokenid = input_ids[0][ii].item()
             tokeninfo = {}
-            tokeninfo["token"] = self.inv_vocab[tokenid].replace("Ġ", " ")
+            tokeninfo["token"] = self.tokenizer.decode([tokenid])
 
             tok_losses = losses[ii-1]
             total = np.exp(tok_losses).sum()
