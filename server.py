@@ -153,7 +153,7 @@ class State:
                     temperature=self.temperature,
                     pad_token_id=self.tokenizer.eos_token_id,
                     max_new_tokens=1)
-                gen_text = self.tokenizer.batch_decode(gen_tokens)[0]
+                gen_text = self.tokenizer.decode(gen_tokens[0])
                 new_text = gen_text[len(prefix):]
                 new_word = re.search('[\w]+', new_text)[0]
 
