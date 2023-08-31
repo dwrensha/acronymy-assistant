@@ -212,8 +212,12 @@ class State:
             tokeninfo["token"] = self.tokenizer.decode([tokenid])
 
             tok_losses = losses[ii-1]
+
+            if tok_losses.sum() > 500:
+                tok_losses = np.array(tok_losses, dtype=np.longdouble)
+            
             total = np.exp(tok_losses).sum()
-            pprob = math.exp(tok_losses[tokenid])
+            pprob = np.exp(tok_losses[tokenid])
             prob = pprob / total
 
             new_entropy = math.log2(1.0 / prob)
