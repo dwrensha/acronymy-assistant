@@ -205,18 +205,18 @@ class State:
 
         entropy = 0
         output = self.model(input_ids)
-        losses = output.logits[0].to("cpu");
+        logits = output.logits[0].to("cpu");
         for ii in range(len(empty_input_ids[0]), len(input_ids[0])):
             total = 0
             tokenid = input_ids[0][ii].item()
             tokeninfo = {}
             tokeninfo["token"] = self.tokenizer.decode([tokenid])
 
-            tok_losses = losses[ii-1]
+            tok_logits = logits[ii-1]
 
             # use scipy.special.logsumexp to avoid possible overflow
             # (commonly happens with smaller models like pythia-70M)
-            prob = np.exp(tok_losses[tokenid] - scipy.special.logsumexp(tok_losses))
+            prob = np.exp(tok_logits[tokenid] - scipy.special.logsumexp(tok_logits))
 
             new_entropy = math.log2(1.0 / prob)
             entropy += new_entropy
