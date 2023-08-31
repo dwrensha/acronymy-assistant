@@ -8,6 +8,7 @@ import numpy as np
 import queue
 import random
 import re
+import scipy
 import torch
 import traceback
 from transformers import GPTNeoXForCausalLM, AutoTokenizer
@@ -212,9 +213,10 @@ class State:
             tokeninfo["token"] = self.tokenizer.decode([tokenid])
 
             tok_losses = losses[ii-1]
-            total = np.exp(tok_losses).sum()
-            pprob = math.exp(tok_losses[tokenid])
-            prob = pprob / total
+
+            # use scipy.special.logsumexp to avoid possible overflow
+            # (commonly happens with smaller models like pythia-70M)
+            prob = np.exp(tok_losses[tokenid] - scipy.special.logsumexp(tok_losses))
 
             new_entropy = math.log2(1.0 / prob)
             entropy += new_entropy

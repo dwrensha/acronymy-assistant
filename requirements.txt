@@ -1,2 +1,3 @@
 aiohttp==3.8.4
 transformers[torch]
+scipy
