@@ -156,7 +156,7 @@ class State:
                     max_new_tokens=1)
                 gen_text = self.tokenizer.decode(gen_tokens[0])
                 new_text = gen_text[len(prefix):]
-                new_word = re.search('[\w]+', new_text)[0]
+                new_word = re.search('[\\w]+', new_text)[0]
 
                 # did we reach the end of the first word?
                 if len(new_word) + 1 < len(new_text):
