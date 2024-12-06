@@ -216,7 +216,7 @@ class State:
 
             # use scipy.special.logsumexp to avoid possible overflow
             # (commonly happens with smaller models like pythia-70M)
-            prob = np.exp(tok_logits[tokenid] - scipy.special.logsumexp(tok_logits))
+            prob = np.exp((tok_logits[tokenid] - scipy.special.logsumexp(tok_logits)).item())
 
             new_entropy = math.log2(1.0 / prob)
             entropy += new_entropy
