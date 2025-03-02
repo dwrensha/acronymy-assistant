@@ -1,8 +1,19 @@
 const ACRONYMY_PROMPT =
-`"small" is defined as: significantly minimal and literally little.
-"coffee" is defined as: carafe of fluid for enjoyable energy.
-"watch" is defined as: wrist attachment that counts hours.
-"\$WORD" is defined as: $DEF.`
+`DEFINITIONS:
+hoped: held out positive expectations determinedly.
+children: cute human infants like dolls requiring extensive nurturing.
+dagger: deadly and gruesome glinting extended razor.
+poppy: pretty ornamental petals pleasing you.
+viable: vision is attainable but lacks existence.
+verbatim: valuing exact recitation because altering things influences meaning.
+maestro: music aficionado supervising the rhapsodic orchestra.
+echoey: everyone can hear our earlier yells.
+potato: pleasant object that almost tastes ordinary.
+sentient: so endowed neurologically that it exhibits nervous tendencies.
+large: like a really grand elephant.
+cite: credit in the endnotes.
+gasket: gummy annular seal keeping everything tight.
+\$WORD: $DEF.`
 
 const WEBSTERS_PROMPT =
 `DEFINITIONS
